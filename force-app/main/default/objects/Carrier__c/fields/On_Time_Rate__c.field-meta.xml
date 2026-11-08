@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>On_Time_Rate__c</fullName>
+    <description>Trailing 90-day on-time delivery rate.</description>
+    <label>On-Time Rate</label>
+    <precision>5</precision>
+    <scale>2</scale>
+    <required>false</required>
+    <type>Percent</type>
+    <unique>false</unique>
+</CustomField>

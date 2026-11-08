@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Line_Weight_Kg__c</fullName>
+    <description>Quantity x unit weight.</description>
+    <label>Line Weight (kg)</label>
+    <formula>Quantity__c * Unit_Weight_Kg__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Number</type>
+    <precision>12</precision>
+    <scale>3</scale>
+</CustomField>

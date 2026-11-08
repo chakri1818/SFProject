@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delay_Hours__c</fullName>
+    <description>Delay in hours.</description>
+    <label>Delay (Hours)</label>
+    <formula>IF(Is_Delayed__c, (Revised_ETA__c - Planned_Arrival__c) * 24, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Number</type>
+    <precision>8</precision>
+    <scale>1</scale>
+</CustomField>

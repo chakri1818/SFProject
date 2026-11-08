@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Capacity_Pallets__c</fullName>
+    <description>Pallet positions.</description>
+    <externalId>false</externalId>
+    <label>Capacity (Pallets)</label>
+    <precision>8</precision>
+    <scale>0</scale>
+    <required>false</required>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

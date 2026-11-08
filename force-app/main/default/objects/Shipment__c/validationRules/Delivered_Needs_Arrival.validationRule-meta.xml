@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivered_Needs_Arrival</fullName>
+    <active>true</active>
+    <description>ISCHANGED/PRIORVALUE usage: delivering requires an actual arrival timestamp.</description>
+    <errorConditionFormula>AND(ISCHANGED(Status__c), ISPICKVAL(Status__c,'Delivered'), ISBLANK(Actual_Arrival__c), NOT(ISNEW()))</errorConditionFormula>
+    <errorDisplayField>Actual_Arrival__c</errorDisplayField>
+    <errorMessage>Enter the actual arrival time before marking the shipment Delivered.</errorMessage>
+</ValidationRule>

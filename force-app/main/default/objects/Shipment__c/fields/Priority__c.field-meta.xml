@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Priority__c</fullName>
+    <description>Priority from the shared global value set.</description>
+    <label>Priority</label>
+    <trackHistory>true</trackHistory>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetName>Shipment_Priority</valueSetName>
+    </valueSet>
+</CustomField>

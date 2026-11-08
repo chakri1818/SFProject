@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Container_Type__c</fullName>
+    <description>Dependent picklist.</description>
+    <label>Container Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Transport_Mode__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ULD Reefer</fullName>
+                <default>false</default>
+                <label>ULD Reefer</label>
+            </value>
+            <value>
+                <fullName>Air Cargo Box</fullName>
+                <default>false</default>
+                <label>Air Cargo Box</label>
+            </value>
+            <value>
+                <fullName>20ft Reefer</fullName>
+                <default>false</default>
+                <label>20ft Reefer</label>
+            </value>
+            <value>
+                <fullName>40ft Reefer</fullName>
+                <default>false</default>
+                <label>40ft Reefer</label>
+            </value>
+            <value>
+                <fullName>Reefer Truck</fullName>
+                <default>false</default>
+                <label>Reefer Truck</label>
+            </value>
+            <value>
+                <fullName>Dry Van</fullName>
+                <default>false</default>
+                <label>Dry Van</label>
+            </value>
+            <value>
+                <fullName>Intermodal Reefer</fullName>
+                <default>false</default>
+                <label>Intermodal Reefer</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Air</controllingFieldValue>
+            <valueName>ULD Reefer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Air</controllingFieldValue>
+            <valueName>Air Cargo Box</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ocean</controllingFieldValue>
+            <valueName>20ft Reefer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ocean</controllingFieldValue>
+            <valueName>40ft Reefer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Road</controllingFieldValue>
+            <valueName>Reefer Truck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Road</controllingFieldValue>
+            <valueName>Dry Van</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rail</controllingFieldValue>
+            <valueName>Intermodal Reefer</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

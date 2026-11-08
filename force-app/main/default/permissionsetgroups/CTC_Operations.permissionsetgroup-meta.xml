@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Day-to-day operations: dispatcher plus analyst visibility.</description>
+    <label>CTC Operations</label>
+    <permissionSets>CTC_Dispatcher</permissionSets>
+    <permissionSets>CTC_Analyst</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Frozen</label>
+    <protected>false</protected>
+    <values>
+        <field>Min_Temp_C__c</field>
+        <value xsi:type="xsd:double">-25</value>
+    </values>
+    <values>
+        <field>Max_Temp_C__c</field>
+        <value xsi:type="xsd:double">-15</value>
+    </values>
+    <values>
+        <field>Critical_Delta_C__c</field>
+        <value xsi:type="xsd:double">5</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arrival_After_Departure</fullName>
+    <active>true</active>
+    <description>Planned arrival cannot precede planned departure.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(Planned_Departure__c)), NOT(ISBLANK(Planned_Arrival__c)), Planned_Arrival__c &lt; Planned_Departure__c)</errorConditionFormula>
+    <errorDisplayField>Planned_Arrival__c</errorDisplayField>
+    <errorMessage>Planned arrival must be after planned departure.</errorMessage>
+</ValidationRule>

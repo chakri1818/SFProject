@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0B5CAB</headerColor>
+        <shouldOverrideOrgTheme>true</shouldOverrideOrgTheme>
+    </brand>
+    <description>Cold-chain logistics control tower: shipments, exceptions, carriers, facilities.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>CTC Control Tower</label>
+    <navType>Standard</navType>
+    <tabs>Shipment__c</tabs>
+    <tabs>Shipment_Exception__c</tabs>
+    <tabs>Carrier__c</tabs>
+    <tabs>Facility__c</tabs>
+    <tabs>CTC_Board</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

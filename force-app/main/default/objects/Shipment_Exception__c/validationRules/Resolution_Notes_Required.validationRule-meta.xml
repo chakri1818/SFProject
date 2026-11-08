@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resolution_Notes_Required</fullName>
+    <active>true</active>
+    <description>Conditional mandatory on resolve.</description>
+    <errorConditionFormula>AND(NOT($Permission.Bypass_Shipment_Validation), ISPICKVAL(Status__c,'Resolved'), OR(ISBLANK(Resolution_Notes__c), ISBLANK(Resolved_At__c)))</errorConditionFormula>
+    <errorDisplayField>Resolution_Notes__c</errorDisplayField>
+    <errorMessage>Resolution notes and resolved-at are required to resolve an exception.</errorMessage>
+</ValidationRule>

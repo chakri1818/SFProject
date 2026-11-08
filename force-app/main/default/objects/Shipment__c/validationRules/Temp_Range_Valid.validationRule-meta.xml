@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Temp_Range_Valid</fullName>
+    <active>true</active>
+    <description>Min temperature must be below max.</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(Min_Temp_C__c)), NOT(ISBLANK(Max_Temp_C__c)), Min_Temp_C__c &gt;= Max_Temp_C__c)</errorConditionFormula>
+    <errorDisplayField>Max_Temp_C__c</errorDisplayField>
+    <errorMessage>Max temperature must be greater than min temperature.</errorMessage>
+</ValidationRule>

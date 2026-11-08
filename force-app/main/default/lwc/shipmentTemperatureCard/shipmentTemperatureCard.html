@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Temperature" icon-name="standard:poll">
+        <div class="slds-var-p-horizontal_medium">
+            <template lwc:if={error}>
+                <div class="slds-text-color_error" role="alert">{error}</div>
+            </template>
+            <template lwc:elseif={hasReading}>
+                <div class={valueClass}>{reading} &deg;C</div>
+                <p class="slds-text-body_small">{statusText} ({band})</p>
+                <p class="slds-text-body_small slds-text-color_weak">
+                    Last reading:
+                    <lightning-formatted-date-time value={lastAt} year="numeric" month="short" day="2-digit" hour="2-digit" minute="2-digit"></lightning-formatted-date-time>
+                </p>
+            </template>
+            <template lwc:else>
+                <p class="slds-text-color_weak">No telemetry received yet.</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

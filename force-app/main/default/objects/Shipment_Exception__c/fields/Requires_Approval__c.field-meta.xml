@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requires_Approval__c</fullName>
+    <description>Critical severity requires approval.</description>
+    <label>Requires Approval</label>
+    <formula>ISPICKVAL(Severity__c,'Critical')</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <type>Checkbox</type>
+</CustomField>
